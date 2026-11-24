@@ -1,0 +1,1 @@
+{ "name": "model-router", "version": "0.1.0", "description": "Picks Haiku, Sonnet or Opus for each request by task type, and shows the choice above the prompt", "types": "./types/index.d.ts" }

@@ -1,0 +1,5 @@
+{
+  "name": "model-router",
+  "owner": { "name": "moshabdesign-bit" },
+  "plugins": [{ "name": "model-router", "source": "./" }]
+}
