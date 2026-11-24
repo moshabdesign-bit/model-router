@@ -9,52 +9,53 @@
 
 import type { Tier } from '../types'
 
-export type Rule = { tier: Tier; words: string[]; reason: string }
+// reason: הסיבה בעברית · reasonEn: the same reason in English
+export type Rule = { tier: Tier; words: string[]; reason: string; reasonEn: string }
 
 export const RULES: Rule[] = [
   // ---------- Opus: תכנון, באגים מורכבים, הרבה קבצים ----------
   {
     tier: 'opus',
-    reason: 'תכנון או ארכיטקטורה',
+    reason: 'תכנון או ארכיטקטורה', reasonEn: 'Planning or architecture',
     words: ['תכנן', 'תכנון', 'תוכנית', 'ארכיטקט', 'אסטרטגיה', 'plan', 'architect', 'design the', 'strategy'],
   },
   {
     tier: 'opus',
-    reason: 'באג מורכב / דיבאג',
+    reason: 'באג מורכב / דיבאג', reasonEn: 'Complex bug / debugging',
     words: ['באג', 'bug', 'debug', 'דיבאג', 'קורס', 'crash', 'לא עובד', "doesn't work", 'not working', 'שגיאה', 'error', 'exception', 'race condition', 'memory leak', 'למה זה'],
   },
   {
     tier: 'opus',
-    reason: 'שינוי בהרבה קבצים',
+    reason: 'שינוי בהרבה קבצים', reasonEn: 'Change across many files',
     words: ['כל הקבצים', 'בכל הפרויקט', 'הרבה קבצים', 'ריפקטור', 'refactor', 'migrate', 'מיגרציה', 'across the', 'all files', 'whole project', 'codebase'],
   },
 
   // ---------- Sonnet: כתיבה ועריכה רגילות ----------
   {
     tier: 'sonnet',
-    reason: 'כתיבה או עריכה רגילה',
+    reason: 'כתיבה או עריכה רגילה', reasonEn: 'Regular writing or editing',
     words: ['כתוב', 'תכתוב', 'ערוך', 'תערוך', 'שנה', 'תשנה', 'תקן', 'תוסיף', 'הוסף', 'עדכן', 'צור', 'תבנה', 'write', 'edit', 'add', 'update', 'create', 'implement', 'fix', 'change', 'component', 'קומפוננטה', 'עמוד', 'page', 'css', 'עיצוב'],
   },
 
   // ---------- Haiku: משימות קצרות ופשוטות ----------
   {
     tier: 'haiku',
-    reason: 'סיכום',
+    reason: 'סיכום', reasonEn: 'Summary',
     words: ['סכם', 'תסכם', 'סיכום', 'summarize', 'summary', 'tl;dr', 'tldr'],
   },
   {
     tier: 'haiku',
-    reason: 'תרגום',
+    reason: 'תרגום', reasonEn: 'Translation',
     words: ['תרגם', 'תתרגם', 'תרגום', 'translate', 'translation'],
   },
   {
     tier: 'haiku',
-    reason: 'שינוי שם של קובץ',
+    reason: 'שינוי שם של קובץ', reasonEn: 'Renaming a file',
     words: ['שנה שם', 'תשנה שם', 'שינוי שם', 'rename'],
   },
   {
     tier: 'haiku',
-    reason: 'חיפוש בקבצים',
+    reason: 'חיפוש בקבצים', reasonEn: 'Searching files',
     words: ['חפש', 'תחפש', 'מצא', 'תמצא', 'איפה', 'find', 'search', 'grep', 'where is', 'list files', 'רשימת קבצים'],
   },
 ]

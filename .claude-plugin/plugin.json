@@ -1,1 +1,19 @@
-{ "name": "model-router", "version": "0.1.0", "description": "Picks Haiku, Sonnet or Opus for each request by task type, and shows the choice above the prompt", "types": "./types/index.d.ts" }
+{
+  "name": "model-router",
+  "version": "0.2.0",
+  "description": "Picks Haiku, Sonnet or Opus for each request by task type, and shows the choice above the prompt",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "language": {
+      "type": "string",
+      "title": "Display language",
+      "description": "Language of the band and command replies: auto follows the language of each prompt",
+      "options": [
+        "auto",
+        "en",
+        "he"
+      ],
+      "default": "auto"
+    }
+  }
+}

@@ -8,11 +8,19 @@ Picks a model for each request you type, so simple tasks don't spend your Opus q
 
 The chosen model and a one-line reason show above the prompt (the picture below is an illustration, not a screenshot).
 
-![What model-router shows above the prompt](docs/preview.svg)
+![What model-router shows above the prompt](docs/preview-en.svg)
+
+In Hebrew:
+
+![model-router in Hebrew](docs/preview.svg)
 
 `/router-off` turns routing off (the session's own `/model` is used), `/router-on` turns it back on; the choice is remembered across sessions. Subagents keep their own model.
 
 Edit the rules in `hooks/rules.ts`: each rule is a model, a list of trigger words (Hebrew or English), and the reason shown.
+
+## Language
+
+The band and the command replies are in English or Hebrew. By default (`auto`) they follow the language of each prompt you type; set the plugin's **Display language** option to `en` or `he` to fix one. Trigger words in `hooks/rules.ts` cover both languages.
 
 ## Token usage
 

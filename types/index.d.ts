@@ -1,5 +1,7 @@
 export type Tier = 'haiku' | 'sonnet' | 'opus'
-export type Choice = { tier: Tier; reason: string }
+export type Lang = 'he' | 'en'
+/** `reason` is Hebrew; `reasonEn` its English (absent in values stored before 0.2.0). */
+export type Choice = { tier: Tier; reason: string; reasonEn?: string }
 
 /** One task: a prompt the person typed and everything the model did for it. */
 export type Task = {
@@ -25,6 +27,7 @@ declare module 'claude-code' {
       last: Task | null
       history: Task[]
       limits: Limit[]
+      lang: Lang
     }
   }
 }
