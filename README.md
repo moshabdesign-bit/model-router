@@ -6,7 +6,11 @@ Picks a model for each request you type, so simple tasks don't spend your Opus q
 - Sonnet: regular writing and editing
 - Opus: planning, complex bugs, changes across many files, and anything it is unsure about
 
-The chosen model and a one-line reason show above the prompt. `/router-off` turns routing off (the session's own `/model` is used), `/router-on` turns it back on; the choice is remembered across sessions. Subagents keep their own model.
+The chosen model and a one-line reason show above the prompt (the picture below is an illustration, not a screenshot).
+
+![What model-router shows above the prompt](docs/preview.svg)
+
+`/router-off` turns routing off (the session's own `/model` is used), `/router-on` turns it back on; the choice is remembered across sessions. Subagents keep their own model.
 
 Edit the rules in `hooks/rules.ts`: each rule is a model, a list of trigger words (Hebrew or English), and the reason shown.
 

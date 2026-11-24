@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" width="760" height="210" font-family="-apple-system, 'Segoe UI', Arial, sans-serif">
+  <rect width="760" height="210" rx="14" fill="#1f1e1d"/>
+  <text x="24" y="34" font-size="12" fill="#8a8782">model-router (illustration of what appears above the prompt box)</text>
+  <circle cx="30" cy="68" r="5" fill="#d97757"/>
+  <text x="46" y="73" font-size="16" fill="#f3f1ec"><tspan font-weight="700">Sonnet</tspan><tspan fill="#9c9893"> · כתיבה או עריכה רגילה</tspan></text>
+  <text x="46" y="103" font-size="14" fill="#9c9893">משימה אחרונה: 18.4K טוקנים · ≈$0.03 · נשאר: 5 שעות: 72% · שבוע: 91%</text>
+  <rect x="24" y="126" width="712" height="58" rx="12" fill="#2b2a28" stroke="#4a4845"/>
+  <text x="44" y="161" font-size="15" fill="#6f6c68">/router-usage   /router-off   /router-on</text>
+</svg>
